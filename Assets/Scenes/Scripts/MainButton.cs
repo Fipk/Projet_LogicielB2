@@ -5,9 +5,10 @@ using UnityEngine;
 public class MainButton : MonoBehaviour
 {
     public GameObject textBox;
+    public static int clickValue = 1;
 
     public void ClickTheButton () {
-        GlobalVariables.Money += 1;
+        GlobalVariables.Money += clickValue;
 
     }
     // Start is called before the first frame update

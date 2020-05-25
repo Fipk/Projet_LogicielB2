@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GlobalVariables : MonoBehaviour
+public class GlobalInvest : MonoBehaviour
 {
-    public static int Money;
-    public GameObject MoneyDisplay;
-    public int InternalMoney;
+    public static int Invest;
+    public GameObject InvestDisplay;
+    public GameObject investCost;
+    public int InternalInvest;
+    public static int clickCost = 5;
 
     // Update is called once per frame
     void Update()
     {
-        InternalMoney = Money;
-        MoneyDisplay.GetComponent<Text>().text = "Money: " + InternalMoney;
+        InternalInvest = Invest;
+        InvestDisplay.GetComponent<Text>().text = "Invest: " + InternalInvest;
+        investCost.GetComponent<Text>().text = "Buy more clicks cost " + clickCost;
     }
 }
