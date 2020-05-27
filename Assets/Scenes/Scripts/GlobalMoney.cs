@@ -16,18 +16,13 @@ public class GlobalMoney : MonoBehaviour
     public static int numberOfMoney;
     public static int moneyPerSecond;
 
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
         currentMoney = GlobalVariables.Money;
-        moneyStats.GetComponent<Text>().text = "Auto: " + numberOfMoney + " / " + moneyPerSecond + " Per second";
-        fakeText.GetComponent<Text>().text = "Buy Money auto - € " + moneyValue;
-        realText.GetComponent<Text>().text = "Buy Money auto - € " + moneyValue;
+        moneyStats.GetComponent<Text>().text = "Maki Factory: " + numberOfMoney + " / " + moneyPerSecond + " Per second";
+        fakeText.GetComponent<Text>().text = "Buy auto maki - € " + moneyValue;
+        realText.GetComponent<Text>().text = "Buy auto maki - € " + moneyValue;
         if (currentMoney >= moneyValue)
         {
             fakeButton.SetActive(false);

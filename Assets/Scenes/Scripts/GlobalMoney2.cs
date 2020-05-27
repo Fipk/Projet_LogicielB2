@@ -20,9 +20,9 @@ public class GlobalMoney2 : MonoBehaviour
     void Update()
     {
         currentMoney = GlobalVariables.Money;
-        moneyStats.GetComponent<Text>().text = "Auto: " + numberOfMoney + " / " + moneyPerSecond + " Per second";
-        fakeText.GetComponent<Text>().text = "Buy Money auto - € " + moneyValue;
-        realText.GetComponent<Text>().text = "Buy Money auto - € " + moneyValue;
+        moneyStats.GetComponent<Text>().text = "Sushi factory: " + numberOfMoney + " / " + moneyPerSecond + " Per second";
+        fakeText.GetComponent<Text>().text = "Buy auto sushi - € " + moneyValue;
+        realText.GetComponent<Text>().text = "Buy auto sushi - € " + moneyValue;
         if (currentMoney >= moneyValue)
         {
             fakeButton.SetActive(false);

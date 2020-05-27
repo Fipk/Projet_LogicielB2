@@ -24,7 +24,7 @@ public class Events : MonoBehaviour
     IEnumerator StartDisaster()
     {
         problemActive = true;
-        chance = Random.Range(1, 20);
+        chance = Random.Range(1, 5) + RandomEvent.chanceFire;
         if (moneyCheck >= chance)
         {
             moneyLoss = Mathf.RoundToInt(GlobalVariables.Money * 0.20f);
