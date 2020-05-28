@@ -10,7 +10,7 @@ public class RandomEvent : MonoBehaviour
     public GameObject textBox;
     public GameObject clickButton;
     public static bool fireActive = false;
-    public static float timeLeft = 10.0f;
+    public static float timeLeft = 30.0f;
     public static float timeLeftFire = 0f;
     public static int chanceFire = 0;
 
@@ -29,14 +29,13 @@ public class RandomEvent : MonoBehaviour
         if (fireActive == true) 
         {
             timeLeftFire += Time.deltaTime;
-            if (fireActive == true && timeLeftFire >= 45)
+            if (fireActive == true && timeLeftFire >= 5)
             {
                 ClickOnFire.numberClickPlus += 10; 
-                timeLeft = 10.0f;
+                timeLeft = Random.Range(20.0f, 40.0f);
                 chanceFire += 1;
                 timeLeftFire = 0.0f;
                 fireActive = false;
-                ClickOnFire.numberClick = 10 + ClickOnFire.numberClickPlus;
             }
         }
     }
@@ -45,8 +44,8 @@ public class RandomEvent : MonoBehaviour
     {
         if (fireActive == false)
         {
-            ClickOnFire.numberClick = 10;
-            textBox.GetComponent<Text>().text = "Il vous reste " + ClickOnFire.numberClick + " clicks à faire";
+            ClickOnFire.numberClick = 10 + ClickOnFire.numberClickPlus;
+            textBox.GetComponent<Text>().text = "Hurry ! Turn off the heat. " + ClickOnFire.numberClick + " clicks remaining.";
             fireActive = true;
             clickButton.SetActive(true);
             statusBox.GetComponent<Text>().text = "Eteignez le feu sinon vous risquez de perdre de l'argent";

@@ -5,10 +5,9 @@ using UnityEngine;
 public class AutoMoney : MonoBehaviour
 {
     
-    public bool CreateMoney = false;
+    public static bool CreateMoney = false;
     public static int MoneyIncrease = 1;
     public int InternalIncrease;
-
 
     // Update is called once per frame
     void Update()

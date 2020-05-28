@@ -15,7 +15,7 @@ public class GlobalInvest : MonoBehaviour
     void Update()
     {
         InternalInvest = Invest;
-        InvestDisplay.GetComponent<Text>().text = "Invest: " + InternalInvest;
-        investCost.GetComponent<Text>().text = "Buy more clicks cost " + clickCost;
+        InvestDisplay.GetComponent<Text>().text = "Knives: " + InternalInvest;
+        investCost.GetComponent<Text>().text = "Buy some knives € " + clickCost;
     }
 }

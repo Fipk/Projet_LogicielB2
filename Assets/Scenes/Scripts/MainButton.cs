@@ -8,7 +8,7 @@ public class MainButton : MonoBehaviour
     public static int clickValue = 1;
 
     public void ClickTheButton () {
-        GlobalVariables.Money += clickValue;
+        GlobalVariables.Money += clickValue + Objects.surplusClick;
 
     }
     // Start is called before the first frame update
