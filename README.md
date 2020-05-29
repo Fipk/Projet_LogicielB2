@@ -1,18 +1,18 @@
 # Projet dev logiciel
 
-## Présentation du projet
+## Installation du projet
 
-Le projet aura pour but de créer un jeu vidéo. Le jeu sera un genre de cookie clicker
+Il faudra pour ce faire télécharger Unity Version 2019.3.12f1.
+Ensuite cloner ce repo dans un dossier.
 
-## Fonctionnalités
+## Importer le projet
 
-* Une interface utilisateur pour gérer son compte.
-* Si possible un système de CRUD pour admin.
-* Génération aléatoire + d'évènements
-* Interaction avec certains pouvoirs
-* Système de boss
+Apres avoir cloner le repo ouvrez unity et faites ajouter un nouveau projet en l'ajoutant.
+Puis cliquer sur le dossier ou vous avez cloner le repo.
 
 
-## Technos utilisés
+## Problèmes techniques
 
-Principalement C#.
+Le projet ne fonctionnera si vous utilisez une version supérieur ou antérieur.
+Ou fonctionnera à moitié.
+
