@@ -22,7 +22,7 @@ public class ClickOnFire : MonoBehaviour
     }
     
     public void ClickOnButton () {
-        textBox.GetComponent<Text>().text = "Il vous reste " + numberClick + " à faire";
+        textBox.GetComponent<Text>().text = numberClick + " clicks remaining.";
         numberClick -= 1;
 
     }

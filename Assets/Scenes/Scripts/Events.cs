@@ -14,7 +14,7 @@ public class Events : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moneyCheck = GlobalVariables.Money / 1000;
+        moneyCheck = GlobalVariables.Money / 100;
         if (problemActive == false)
         {
             StartCoroutine(StartDisaster());
